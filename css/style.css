@@ -1,0 +1,99 @@
+:root {
+    --main-color-bg: #5847eb;
+    --color-bg: #1c1f4a;
+    --text-color: #bdc1ff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    background-color: #0f1424;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    font-size: 18px;
+    width: 90%;
+    margin: 100px auto 0 ;
+}
+.profile .profile-desc {
+    position: relative;
+    background: var(--main-color-bg);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.profile .profile-desc img {
+    width: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.profile .profile-desc .info h2 {
+    font-size: 27px;
+}
+.profile .profile-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: normal;
+    background-color: var(--color-bg);
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+    margin-top: -9px;
+}
+.profile .profile-nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+}
+.profile .profile-nav ul a {
+    color: var(--text-color);
+    transition: 1s;
+}
+.profile .profile-nav ul a:hover,
+.profile .profile-nav ul a.active {
+    color: white;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+.cards .card .card-img {
+    height: 50px;
+    border-radius: 10px 10px 0 0 ;
+}
+.cards .card .card-info {
+    padding: 20px;
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: -9px;
+}
+.cards .card .card-info .title,
+.cards .card .card-info .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards .card .card-info .title h3 {
+    font-size: 16px;
+    font-weight: normal;
+}
+.cards .card .card-info .title i {
+    font-size: 20px;
+    color: var(--text-color);
+}
+.cards .card .card-info .time h3 {
+    font-size: 27px;
+}
+.cards .card .card-info .time p {
+    font-size: 14px;
+    color: var(--text-color);
+}
